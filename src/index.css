@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --bg: #162b3a;
+  --surface: #1a2f3f;
+  --card: #1e3448;
+  --mid: #243d52;
+  --rim: #2e5070;
+  --light: #304e68;
+  
+  --gold: #c9a84c;
+  --gold-hi: #e2c97e;
+  --gold-lo: #8a6a28;
+  --gold-dim: rgba(201, 168, 76, 0.12);
+  --gold-glow: rgba(201, 168, 76, 0.22);
+  
+  --text: #c8dde8;
+  --text-hi: #eaf4f9;
+  --muted: #7fa8be;
+  --faint: #3a6070;
+  
+  --red: #c04040;
+  --green: #2a7a50;
+  --blue: #2a5a7a;
+  
+  --r: 10px;
+  --rl: 16px;
+  --tr: 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Lato', sans-serif;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rim);
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes twk {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: var(--opacity, 0.4);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loginIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Utility classes */
+.text-hi {
+  color: var(--text-hi);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-faint {
+  color: var(--faint);
+}
+
+.bg-surface {
+  background: var(--surface);
+}
+
+.bg-card {
+  background: var(--card);
+}
+
+.border-rim {
+  border-color: var(--rim);
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.gold-hi-text {
+  color: var(--gold-hi);
+}
+
+/* Scrollable area */
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+/* Sizing */
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+/* Positioning */
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  inset: 0;
+}
+
+/* Display */
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}

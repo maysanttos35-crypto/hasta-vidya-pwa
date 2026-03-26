@@ -1,0 +1,17 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a6a28;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2c97e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#162b3a"/>
+  <g transform="translate(256, 256)">
+    <!-- Hand outline -->
+    <path d="M -80 -80 L -80 80 L 0 100 L 80 80 L 80 -80 Z" fill="url(#grad1)" stroke="#c9a84c" stroke-width="8"/>
+    <!-- Palm lines for mystical effect -->
+    <path d="M -40 -20 Q 0 0 40 -20" stroke="#162b3a" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M -40 20 Q 0 30 40 20" stroke="#162b3a" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M -30 60 Q 0 70 30 60" stroke="#162b3a" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
