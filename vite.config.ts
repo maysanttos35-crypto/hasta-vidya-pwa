@@ -4,6 +4,10 @@ import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path';
 
 export default defineConfig({
+  define: {
+    'process.env.VITE_SUPABASE_URL': JSON.stringify(process.env.VITE_SUPABASE_URL || 'https://svcozvffwqlnksgbiewx.supabase.co'),
+    'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(process.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN2Y296dmZmd3FsbmtzZ2JpZXd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0ODc3MzQsImV4cCI6MjA5MDA2MzczNH0._p6rUtSMoRV3fEiiQK8TP28dkRhS2ptQcobSJ1tjcso'),
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
